@@ -1,7 +1,9 @@
 lpl-processor
 =============
 
-Processing sketch for converting regular videos into light painting videos.
+Processing sketch for converting regular videos into light painting videos. Probably doesn't require any previous experience with code. It's very simple.
+
+[Download the zip of the sketch.](https://github.com/positlabs/lpl-processor/raw/master/lpl_processor.zip)
 
 - Download the Processing IDE from https://processing.org/
 - Put your movie into `lpl_processor/data/`
