@@ -2,7 +2,7 @@ import processing.video.*;
 Movie movie;
 
 String moviePath = "sparkle.mov"; // name of your movie file in data folder
-int blendMode = LIGHTEST; // SCREEN or LIGHTEST
+int blendMode = SCREEN; // SCREEN or LIGHTEST
 
 PGraphics canvas;
 int frameNum = 0;
