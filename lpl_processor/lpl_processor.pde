@@ -4,6 +4,7 @@ Movie movie;
 String moviePath = "sparkle.mov"; // name of your movie file in data folder
 int blendMode = SCREEN; // SCREEN or LIGHTEST
 
+String outputDir = "output-" + moviePath.replace(".", "-");
 PGraphics canvas;
 int frameNum = 0;
 float _scale;
@@ -14,7 +15,6 @@ void setup() {
   size(int(viewportWidth), int(viewportHeight));
   scale(_scale);
   background(0);
-
   movie = new Movie(this, moviePath);
   movie.play();
 }
@@ -77,8 +77,7 @@ void renderFrame() {
     canvas.updatePixels();
   }
 
-  frameNum++;
-  canvas.save("output/" + nfs(frameNum, 6) + ".png"); // or .tiff
-
+  frameNum++;    
+  canvas.save(outputDir + "/" + nfs(frameNum, 6) + ".png"); // or .tiff
   image(canvas, 0, 0);
 }
